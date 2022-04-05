@@ -10,7 +10,7 @@
 	<%
 		request.setCharacterEncoding("UTF-8");
 	
-		String pname = request.getParameter("name");
+		String pid = request.getParameter("id");
 		String ppw = request.getParameter("pw");
 		String pgender = request.getParameter("gender");
 		String phobby[] = request.getParameterValues("hobby");
@@ -33,7 +33,7 @@
 		
 	%>
 	
-	<h2><%= pname %> 님 반갑습니다.<br></h2>
+	<h2><%= pid %> 님 반갑습니다.<br></h2>
 	비밀번호는 <%= ppw %> 입니다.<br>
 	당신의 성별은 [<%= pgender %>] 입니다.<br>
 	당신의 취미는 	
